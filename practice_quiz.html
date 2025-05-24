@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="quizChapterTitle"></h1>
+        <div class="progress-bar-container">
+            <div id="quizProgressBar" class="progress-bar"></div>
+        </div>
+        <p class="progress-text"><span id="quizProgressText">0/0 Fragen richtig</span></p>
+        
+        <div class="question-card">
+            <p id="quizQuestionText"></p>
+            <div id="quizAnswerOptions">
+                </div>
+            <input type="text" id="quizShortAnswerInput" placeholder="Deine Antwort...">
+            <button id="submitQuizAnswerButton">Antwort prüfen</button>
+        </div>
+        
+        <p id="quizFeedbackText" class="feedback hidden"></p>
+        <button id="quizNextButton">Weiter</button>
+        <button id="backToModeSelectionBtn" class="back-button">Zurück zur Moduswahl</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF0-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umfassendes Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Umfassendes Geschichts-Quiz</h1>
+        <div class="progress-bar-container">
+            <div id="comprehensiveProgressBar" class="progress-bar"></div>
+        </div>
+        <p class="progress-text"><span id="comprehensiveProgressText">0/0 Fragen richtig</span></p>
+
+        <div class="question-card">
+            <p id="comprehensiveQuizQuestionText"></p>
+            <div id="comprehensiveQuizAnswerOptions">
+                </div>
+            <input type="text" id="comprehensiveQuizShortAnswerInput" placeholder="Deine Antwort...">
+            <button id="submitComprehensiveQuizAnswerButton">Antwort prüfen</button>
+        </div>
+        
+        <p id="comprehensiveQuizFeedbackText" class="feedback hidden"></p>
+        <button id="comprehensiveQuizNextButton">Weiter</button>
+        <button id="backToChaptersBtn" class="back-button">Zurück zur Kapitelauswahl</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

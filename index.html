@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geschichts-Quest-Erlebnis - Start</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="authScreen">
+            <h1>Willkommen zum Geschichts-Quest-Erlebnis!</h1>
+            <p id="welcomeMessage">Bitte melde dich an oder registriere dich.</p>
+
+            <div class="auth-toggle">
+                <button id="showLoginBtn" class="active">Anmelden</button>
+                <button id="showRegisterBtn">Registrieren</button>
+            </div>
+
+            <div id="loginForm" class="auth-form">
+                <input type="text" id="loginUsername" placeholder="Benutzername" required>
+                <input type="password" id="loginPassword" placeholder="Passwort" required>
+                <button id="loginBtn">Anmelden</button>
+            </div>
+
+            <div id="registerForm" class="auth-form hidden">
+                <input type="text" id="registerUsername" placeholder="Benutzername" required>
+                <input type="password" id="registerPassword" placeholder="Passwort" required>
+                <select id="registerClass" required>
+                    <option value="">Wähle deine Klasse</option>
+                    <option value="5">Klasse 5</option>
+                    <option value="6">Klasse 6</option>
+                    <option value="7">Klasse 7</option>
+                    <option value="8">Klasse 8</option>
+                    <option value="9">Klasse 9</option>
+                    <option value="10">Klasse 10</option>
+                    <option value="11">Klasse 11</option>
+                    <option value="12">Klasse 12</option>
+                </select>
+                <button id="registerBtn">Registrieren</button>
+            </div>
+
+            <p id="authFeedback" class="feedback hidden"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

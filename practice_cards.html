@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karteikarten üben</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="flashcardsChapterTitle"></h1>
+        <div class="progress-bar-container">
+            <div id="flashcardsProgressBar" class="progress-bar"></div>
+        </div>
+        <p class="progress-text"><span id="flashcardsProgressText">0/0 Fragen richtig</span></p>
+
+        <div id="flashcardContainer" class="flashcard-container">
+            <div id="flashcard" class="flashcard">
+                <div id="flashcardFront" class="flashcard-face flashcard-front"></div>
+                <div id="flashcardBack" class="flashcard-face flashcard-back"></div>
+            </div>
+        </div>
+        
+        <div class="flashcard-controls">
+            <button id="flipCardBtn">Karte umdrehen</button>
+            <button id="nextCardBtn">Nächste Karte</button>
+        </div>
+
+        <button id="backToModeSelectionBtn" class="back-button">Zurück zur Moduswahl</button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

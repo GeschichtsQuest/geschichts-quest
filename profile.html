@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - GeschichtsQuest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="profileScreen">
+        <h1 id="profileUsername">Dein Profil</h1>
+        <p>Hier kannst du deine Fortschritte und Einstellungen verwalten.</p>
+
+        <div class="stats-section">
+            <h2>Deine Lernfortschritte</h2>
+            <div class="progress-item">
+                <h3>Gesamtfortschritt (Kapitel)</h3>
+                <div class="progress-bar-container">
+                    <div id="overallProgressBar" class="progress-bar"></div>
+                </div>
+                <p id="overallProgressText" class="progress-text">0% der Kapitel bearbeitet (0/0)</p>
+            </div>
+            <div class="progress-item">
+                <h3>Umfassendes Quiz</h3>
+                <p>Richtige Antworten: <span id="comprehensiveCorrect">0</span> / <span id="comprehensiveTotal">0</span></p>
+                <div class="progress-bar-container">
+                    <div id="comprehensiveQuizProgressBar" class="progress-bar"></div>
+                </div>
+                <p id="comprehensiveQuizProgressText" class="progress-text">0% richtig</p>
+            </div>
+            <p>Insgesamt richtig beantwortete Fragen: <span id="overallCorrectAnswers">0</span> von <span id="overallTotalQuestions">0</span></p>
+
+            <div id="chapterStatsList" class="chapter-stats-list">
+                <p>Lade Kapitelstatistiken...</p>
+            </div>
+        </div>
+
+        <div class="settings-section">
+            <h2>Deine Einstellungen</h2>
+            <div class="form-group">
+                <label for="profileName">Benutzername:</label>
+                <input type="text" id="profileName" disabled>
+                <button id="editNameBtn" class="small-button">Bearbeiten</button>
+                <button id="saveNameBtn" class="small-button hidden">Speichern</button>
+                <button id="cancelNameBtn" class="small-button hidden">Abbrechen</button>
+                <p id="nameChangeInfo" class="info-text"></p>
+            </div>
+
+            <div class="form-group">
+                <label for="profilePassword">Passwort:</label>
+                <input type="password" id="profilePassword" disabled placeholder="********">
+                <button id="editPasswordBtn" class="small-button">Bearbeiten</button>
+                <button id="savePasswordBtn" class="small-button hidden">Speichern</button>
+                <button id="cancelPasswordBtn" class="small-button hidden">Abbrechen</button>
+                <p id="passwordChangeInfo" class="info-text"></p>
+                <div id="passwordConfirmationFields" class="hidden">
+                    <label for="oldPassword">Altes Passwort:</label>
+                    <input type="password" id="oldPassword">
+                    <label for="newPassword">Neues Passwort:</label>
+                    <input type="password" id="newPassword">
+                    <label for="confirmNewPassword">Neues Passwort bestätigen:</label>
+                    <input type="password" id="confirmNewPassword">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="profileClass">Klasse:</label>
+                <select id="profileClass" disabled>
+                    <option value="">Wähle deine Klasse</option>
+                    <option value="5">Klasse 5</option>
+                    <option value="6">Klasse 6</option>
+                    <option value="7">Klasse 7</option>
+                    <option value="8">Klasse 8</option>
+                    <option value="9">Klasse 9</option>
+                    <option value="10">Klasse 10</option>
+                    <option value="11">Klasse 11</option>
+                    <option value="12">Klasse 12</option>
+                </select>
+                <button id="editClassBtn" class="small-button">Bearbeiten</button>
+                <button id="saveClassBtn" class="small-button hidden">Speichern</button>
+                <button id="cancelClassBtn" class="small-button hidden">Abbrechen</button>
+            </div>
+            <p id="settingsFeedback" class="feedback hidden"></p>
+        </div>
+
+        <div class="button-group">
+            <button id="backToSubjectsBtn" class="button">Zurück zur Fächerwahl</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
